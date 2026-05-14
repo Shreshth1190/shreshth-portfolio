@@ -3,143 +3,322 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shreshth Tyagi | Data Analyst</title>
-  <meta name="description" content="Portfolio of Shreshth Tyagi — Data Analyst turning data into insight." />
+  <title>Shreshth Tyagi | Data Analyst Portfolio</title>
+  <meta name="description" content="Data analyst portfolio — translating complex data into compelling stories." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page">
-    <div class="grid-lines" aria-hidden="true"></div>
-
-    <header class="site-header">
+  <header class="site-header">
+    <div class="header-inner">
       <a href="#home" class="brand">
         <span class="brand-icon" aria-hidden="true">
-          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0" y="10" width="5" height="8" fill="currentColor" />
-            <rect x="8" y="5" width="5" height="13" fill="currentColor" />
-            <rect x="16" y="0" width="5" height="18" fill="currentColor" />
+          <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="11" width="5" height="9" fill="currentColor" />
+            <rect x="9" y="6" width="5" height="14" fill="currentColor" />
+            <rect x="18" y="0" width="5" height="20" fill="currentColor" />
           </svg>
         </span>
-        <span class="brand-text">Shreshth<span class="brand-dot">.data</span></span>
+        <span class="brand-name">SHRESHTH TYAGI</span>
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#clients">My Clients</a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="mainNav" aria-label="Primary">
+        <a href="#home">Home</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a href="#contact" class="btn-contact">Contact Me</a>
-    </header>
+      <a class="btn btn-resume" href="resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
+    </div>
+  </header>
 
-    <main id="home">
-      <section class="hero" aria-label="Introduction">
-        <div class="hero-grid">
-          <div class="hero-col hero-col-intro">
-            <p class="hi-line">Hi! I’m Shreshth</p>
-            <div class="rule rule-left"></div>
-          </div>
-
-          <div class="hero-col hero-col-center">
-            <div class="hero-visual">
-              <div class="photo-circle" aria-hidden="true"></div>
-              <div class="photo-frame">
-                <img
-                  class="photo-img"
-                  src="assets/photo.jpg"
-                  alt="Portrait of Shreshth Tyagi"
-                  width="420"
-                  height="520"
-                  loading="eager"
-                  decoding="async"
-                  onerror="this.style.display='none'; this.closest('.photo-frame').classList.add('photo-placeholder');"
-                />
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section section-home dot-bg">
+      <div class="container home-hero">
+        <div class="home-hero-copy">
+          <p class="eyebrow">Data-Driven Insights | Strategic Decisions</p>
+          <h1>Translating Complex Data into Compelling Stories.</h1>
+          <p class="lead">
+            I’m a passionate Data Analyst who transforms raw numbers into clarity for stakeholders.
+            From dashboards to deep dives, I help teams see what matters and act on it.
+          </p>
+          <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        </div>
+        <div class="home-hero-visual">
+          <div class="hero-frame">
+            <div class="hero-frame-accent hero-frame-accent--teal" aria-hidden="true"></div>
+            <div class="hero-frame-accent hero-frame-accent--orange" aria-hidden="true"></div>
+            <div class="hero-photo-wrap">
+              <img src="assets/hero.jpg" alt="Shreshth Tyagi at work with analytics" class="hero-photo" width="520" height="400" loading="eager" onerror="this.style.display='none'" />
+              <div class="hero-photo-fallback" aria-hidden="true">
+                <span class="hero-fallback-chart"></span>
               </div>
-              <h1 class="hero-title">
-                <span class="hero-title-word hero-title-data">DATA</span>
-                <span class="hero-title-word hero-title-analyst">ANALYST</span>
-              </h1>
-            </div>
-          </div>
-
-          <div class="hero-col hero-col-resume">
-            <div class="resume-wrap">
-              <div class="rule rule-resume-top"></div>
-              <a class="resume-link" href="resume.pdf" target="_blank" rel="noreferrer">Download my Resume</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="goal" class="goal-block">
-        <h2 class="goal-heading">Goal</h2>
-        <p class="goal-quote">
-          The goal is to turn <strong>Data</strong> into <strong>Information</strong> &amp;
-          <strong>information</strong> into <strong>insight</strong>
-        </p>
-      </section>
+      <div class="container">
+        <h2 class="section-heading section-heading--center">Core Competencies</h2>
+        <ul class="competency-row">
+          <li class="competency-item">
+            <span class="competency-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="28" width="8" height="12" fill="#008080"/><rect x="20" y="18" width="8" height="22" fill="#001F3F"/><rect x="32" y="10" width="8" height="30" fill="#FF8C00"/></svg>
+            </span>
+            <span>Data Visualization</span>
+          </li>
+          <li class="competency-item">
+            <span class="competency-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M10 38h28M14 32l6-10 8 6 10-16" stroke="#008080" stroke-width="3" stroke-linecap="round"/><circle cx="14" cy="32" r="3" fill="#001F3F"/><circle cx="28" cy="28" r="3" fill="#001F3F"/><circle cx="38" cy="12" r="3" fill="#FF8C00"/></svg>
+            </span>
+            <span>Statistical Analysis</span>
+          </li>
+          <li class="competency-item">
+            <span class="competency-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M12 36V12h8v24h8V20h8v16" stroke="#001F3F" stroke-width="2.5"/><path d="M12 36h24" stroke="#008080" stroke-width="2"/></svg>
+            </span>
+            <span>Predictive Modeling</span>
+          </li>
+          <li class="competency-item">
+            <span class="competency-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="22" r="14" stroke="#008080" stroke-width="2"/><path d="M24 8v6M24 30v6M10 22h6M32 22h6" stroke="#FF8C00" stroke-width="2"/></svg>
+            </span>
+            <span>Machine Learning</span>
+          </li>
+          <li class="competency-item">
+            <span class="competency-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="12" width="28" height="24" rx="2" stroke="#001F3F" stroke-width="2"/><path d="M14 20h8M14 26h20M14 32h14" stroke="#008080" stroke-width="2"/></svg>
+            </span>
+            <span>SQL &amp; Python</span>
+          </li>
+          <li class="competency-item">
+            <span class="competency-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="14" width="14" height="22" rx="1" fill="#008080" opacity=".35"/><rect x="26" y="14" width="14" height="22" rx="1" fill="#FF8C00" opacity=".45"/></svg>
+            </span>
+            <span>Tableau / Power BI</span>
+          </li>
+        </ul>
 
-      <section id="about" class="content-section">
-        <h2 class="section-title">About</h2>
-        <p class="section-body">
-          I turn raw data into practical, business-ready insights. I care about data integrity, scalable pipelines,
-          and clear storytelling. I’m strengthening my skills in automated pipelines and database architecture.
-        </p>
-      </section>
-
-      <section id="clients" class="content-section content-muted">
-        <h2 class="section-title">My Clients</h2>
-        <p class="section-body">
-          I’ve collaborated with teams on analytics dashboards, reporting, and ad hoc analysis. Add logos or names
-          here when you’re ready — this block matches the reference navigation label.
-        </p>
-      </section>
-
-      <section id="skills" class="content-section">
-        <h2 class="section-title">Skills</h2>
-        <div class="pill-row">
-          <span>SQL</span><span>Python</span><span>Power BI</span><span>Tableau</span>
-          <span>Excel</span><span>Git</span><span>Statistics</span>
-        </div>
-      </section>
-
-      <section id="projects" class="content-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-list">
-          <article class="project-row">
-            <h3>Task Manager App</h3>
-            <p>Productivity app with task CRUD, filters, and local storage.</p>
-            <div class="project-links"><a href="#">Live</a><a href="#">Code</a></div>
+        <h2 class="section-heading section-heading--center">Highlighted Projects</h2>
+        <div class="highlight-grid">
+          <article class="card card-highlight">
+            <div class="card-thumb card-thumb--dash1" role="img" aria-label="Dashboard preview"></div>
+            <h3>Sales Performance Dashboard</h3>
+            <p>Executive KPIs, regional trends, and drill-down filters for revenue teams.</p>
           </article>
-          <article class="project-row">
-            <h3>Weather Dashboard</h3>
-            <p>Weather app using public APIs with city search.</p>
-            <div class="project-links"><a href="#">Live</a><a href="#">Code</a></div>
+          <article class="card card-highlight">
+            <div class="card-thumb card-thumb--dash2" role="img" aria-label="Segmentation preview"></div>
+            <h3>Customer Segmentation Analysis</h3>
+            <p>RFM and clustering to prioritize retention campaigns and LTV growth.</p>
           </article>
-          <article class="project-row">
-            <h3>Portfolio Website</h3>
-            <p>Personal site — data-first layout inspired by modern analyst portfolios.</p>
-            <div class="project-links"><a href="#home">Live</a><a href="#">Code</a></div>
+          <article class="card card-highlight">
+            <div class="card-thumb card-thumb--dash3" role="img" aria-label="Supply chain preview"></div>
+            <h3>Supply Chain Optimization</h3>
+            <p>Lead-time and inventory modeling to reduce stockouts and carrying cost.</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="contact" class="content-section content-contact">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-body">Let’s connect for opportunities or collaborations.</p>
-        <div class="contact-row">
-          <a class="btn-outline" href="mailto:shreshthtyagi61@gmail.com">Email</a>
-          <a class="btn-outline" href="https://www.linkedin.com/in/shreshth-tyagi-709b7a227/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn-outline" href="https://github.com/Shreshth1190" target="_blank" rel="noreferrer">GitHub</a>
+    <!-- PROJECTS -->
+    <section id="projects" class="section dot-bg">
+      <div class="container">
+        <h2 class="section-title">Selected Analytics Projects</h2>
+        <div class="project-grid">
+          <article class="card card-project">
+            <div class="card-thumb card-thumb--p1" role="img" aria-hidden="true"></div>
+            <h3>E-commerce Recommendation Engine</h3>
+            <p>Collaborative filtering prototype with offline evaluation and A/B test design.</p>
+            <div class="tag-row"><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Tableau</span></div>
+          </article>
+          <article class="card card-project">
+            <div class="card-thumb card-thumb--p2" role="img" aria-hidden="true"></div>
+            <h3>Time Series Forecasting</h3>
+            <p>Demand forecasting pipeline with seasonality decomposition and error tracking.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">Power BI</span></div>
+          </article>
+          <article class="card card-project">
+            <div class="card-thumb card-thumb--p3" role="img" aria-hidden="true"></div>
+            <h3>Marketing Attribution Model</h3>
+            <p>Multi-touch attribution views for channel spend and conversion paths.</p>
+            <div class="tag-row"><span class="tag">SQL</span><span class="tag">Excel</span></div>
+          </article>
+          <article class="card card-project">
+            <div class="card-thumb card-thumb--p4" role="img" aria-hidden="true"></div>
+            <h3>HR Analytics &amp; Retention</h3>
+            <p>Attrition drivers, cohort survival curves, and manager dashboards.</p>
+            <div class="tag-row"><span class="tag">Tableau</span><span class="tag">Python</span></div>
+          </article>
+          <article class="card card-project">
+            <div class="card-thumb card-thumb--p5" role="img" aria-hidden="true"></div>
+            <h3>Financial Variance Analysis</h3>
+            <p>Budget vs actual with automated commentary templates for leadership reviews.</p>
+            <div class="tag-row"><span class="tag">Power BI</span><span class="tag">SQL</span></div>
+          </article>
+          <article class="card card-project">
+            <div class="card-thumb card-thumb--p6" role="img" aria-hidden="true"></div>
+            <h3>Data Quality Monitoring</h3>
+            <p>Rule-based checks, anomaly alerts, and lineage documentation for core tables.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">Git</span></div>
+          </article>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Shreshth Tyagi</p>
-    </footer>
-  </div>
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Data Analytics Skillset</h2>
+        <div class="skills-layout">
+          <div class="skills-block">
+            <h3 class="skills-subtitle">Data Wrangling</h3>
+            <ul class="bar-list">
+              <li><span class="bar-label">SQL</span><span class="bar-track"><span class="bar-fill" style="--w:92%"></span></span></li>
+              <li><span class="bar-label">Python (Pandas)</span><span class="bar-track"><span class="bar-fill" style="--w:88%"></span></span></li>
+              <li><span class="bar-label">Excel / Sheets</span><span class="bar-track"><span class="bar-fill" style="--w:85%"></span></span></li>
+              <li><span class="bar-label">ETL Concepts</span><span class="bar-track"><span class="bar-fill" style="--w:72%"></span></span></li>
+            </ul>
+          </div>
+          <div class="skills-block donut-block">
+            <h3 class="skills-subtitle">Software Proficiency</h3>
+            <div class="donut-row">
+              <div class="donut-wrap"><div class="donut" style="--p:88" data-label="Tableau"></div><span>Tableau</span></div>
+              <div class="donut-wrap"><div class="donut" style="--p:82" data-label="Power BI"></div><span>Power BI</span></div>
+              <div class="donut-wrap"><div class="donut" style="--p:90" data-label="SQL"></div><span>SQL</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-block skills-block--full">
+          <h3 class="skills-subtitle">Python Libraries</h3>
+          <ul class="lib-row">
+            <li class="lib-pill">Pandas</li>
+            <li class="lib-pill">NumPy</li>
+            <li class="lib-pill">Matplotlib</li>
+            <li class="lib-pill">Seaborn</li>
+            <li class="lib-pill">Scikit-learn</li>
+            <li class="lib-pill">Plotly</li>
+          </ul>
+        </div>
+        <div class="skills-block skills-block--full">
+          <h3 class="skills-subtitle">A/B Testing &amp; Experimentation</h3>
+          <div class="ab-grid" role="img" aria-label="Illustrative experiment grid">
+            <div class="ab-cell ab-cell--a">A</div>
+            <div class="ab-cell ab-cell--b">B</div>
+            <div class="ab-cell ab-cell--metric">Δ</div>
+            <div class="ab-cell ab-cell--lift">Lift</div>
+          </div>
+        </div>
+        <h3 class="skills-subtitle skills-subtitle--certs">Certifications</h3>
+        <div class="cert-row">
+          <div class="cert-card">
+            <div class="cert-badge" aria-hidden="true">📊</div>
+            <strong>Data Analytics</strong>
+            <span>Online program / platform</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge" aria-hidden="true">🐍</div>
+            <strong>Python for Data</strong>
+            <span>Course provider</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge" aria-hidden="true">📈</div>
+            <strong>Visualization</strong>
+            <span>BI tool certification</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section dot-bg">
+      <div class="container">
+        <h2 class="section-title">Meet Shreshth Tyagi</h2>
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <img src="assets/about.jpg" alt="Portrait of Shreshth Tyagi" class="about-photo" width="360" height="420" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.classList.add('is-visible');" />
+            <div class="about-photo-placeholder" aria-hidden="true"></div>
+          </div>
+          <div class="about-copy">
+            <p>
+              I combine analytical rigor with clear communication so technical findings land with business audiences.
+              My work spans reporting, ad hoc analysis, and building reusable datasets others can trust.
+            </p>
+            <p>
+              I’m motivated by problems where the right chart or the right filter changes a decision — and where
+              documentation and data quality make that insight repeatable.
+            </p>
+          </div>
+        </div>
+        <h3 class="skills-subtitle">Professional Growth</h3>
+        <div class="timeline">
+          <div class="timeline-item"><span class="timeline-year">2021</span><p>Foundations in SQL, spreadsheets, and first dashboards.</p></div>
+          <div class="timeline-item"><span class="timeline-year">2022</span><p>Deeper analytics projects, Python, and stakeholder presentations.</p></div>
+          <div class="timeline-item"><span class="timeline-year">2023</span><p>End-to-end reporting, BI storytelling, and portfolio-ready work.</p></div>
+        </div>
+        <h3 class="skills-subtitle">Passions</h3>
+        <ul class="passion-row">
+          <li class="passion-item"><span aria-hidden="true">📊</span> Commerce</li>
+          <li class="passion-item"><span aria-hidden="true">🗄️</span> SQL</li>
+          <li class="passion-item"><span aria-hidden="true">🐍</span> Python</li>
+          <li class="passion-item"><span aria-hidden="true">🎵</span> Music</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Let’s Connect</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <ul class="contact-list">
+              <li><a href="mailto:shreshthtyagi61@gmail.com">shreshthtyagi61@gmail.com</a></li>
+              <li><a href="https://shreshth1190.github.io/aditya-portfolio/" target="_blank" rel="noreferrer">Portfolio site</a></li>
+            </ul>
+            <h3>Social Links</h3>
+            <ul class="social-row">
+              <li><a href="https://www.linkedin.com/in/shreshth-tyagi-709b7a227/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a></li>
+              <li><a href="https://github.com/Shreshth1190" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a></li>
+              <li><a href="#" aria-label="Tableau Public">Tb</a></li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required />
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required />
+            <label for="cf-msg">Message</label>
+            <textarea id="cf-msg" name="message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-navy">Send Message</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <ul class="footer-social">
+        <li><a href="https://www.linkedin.com/in/shreshth-tyagi-709b7a227/" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://github.com/Shreshth1190" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a></li>
+        <li><a href="#" aria-label="Tableau Public">Tableau</a></li>
+      </ul>
+      <p class="footer-copy">© <span id="year"></span> Shreshth Tyagi. All rights reserved.</p>
+      <div class="footer-meta">
+        <a href="mailto:shreshthtyagi61@gmail.com">shreshthtyagi61@gmail.com</a>
+        <span class="footer-dot">·</span>
+        <a href="https://shreshth1190.github.io/aditya-portfolio/" target="_blank" rel="noreferrer">Website</a>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
