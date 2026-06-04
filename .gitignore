@@ -1,0 +1,4 @@
+# Local-only files not used on the site
+assets/*.PDF
+assets/*.pdf
+!resume.pdf
